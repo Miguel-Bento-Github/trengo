@@ -1,0 +1,102 @@
+[
+  {
+    "id": "5b54d8c3-0398-4f82-afdd-d6ee92a89b6a",
+    "name": "general",
+    "icon": "home"
+  },
+  {
+    "id": "8cf44c1b-b7ec-4a2a-9dbb-4c98273e8c71",
+    "name": "random",
+    "icon": "user"
+  },
+  {
+    "id": "3a7316fb-39fb-4890-9142-760ab48d789f",
+    "name": "announcements",
+    "icon": "bell"
+  },
+  {
+    "id": "25e78028-29ed-4c6d-9d8a-82d98198a0e5",
+    "name": "feedback",
+    "icon": "cog"
+  },
+  {
+    "id": "ee1eb77d-7b46-4702-93b2-b6d4b8fd7bc2",
+    "name": "development",
+    "icon": "camera"
+  },
+  {
+    "id": "63d58dd3-b3b0-497e-8b7c-bd12ad1c8a78",
+    "name": "design",
+    "icon": "heart"
+  },
+  {
+    "id": "5d060c5a-0a0f-4f02-8040-eb200f86b3d0",
+    "name": "random-talks",
+    "icon": "star"
+  },
+  {
+    "id": "4c99a6c0-9e88-48a4-a8a1-07cb5858d342",
+    "name": "fun-stuff",
+    "icon": "globe"
+  },
+  {
+    "id": "40f4a506-6c02-41da-9a38-2c3bb27c334e",
+    "name": "music",
+    "icon": "music"
+  },
+  {
+    "id": "ae2b9dc7-1521-4056-85f0-8d801b6e9a8b",
+    "name": "coding",
+    "icon": "car"
+  },
+  {
+    "id": "84e1c73f-5d7f-4ff3-86bb-7f0b34cfb5a6",
+    "name": "books",
+    "icon": "book"
+  },
+  {
+    "id": "3fbc5d91-49ef-4c1a-af67-c0f14480d37e",
+    "name": "cloud",
+    "icon": "cloud"
+  },
+  {
+    "id": "bb17cbe7-5189-41c6-ae6a-07c1df04a2df",
+    "name": "gifts",
+    "icon": "gift"
+  },
+  {
+    "id": "b1108971-64f1-47a4-b8e7-0996a7d7d4b7",
+    "name": "nature",
+    "icon": "leaf"
+  },
+  {
+    "id": "2a8571b1-45d4-4650-9a5b-7d3fb750509d",
+    "name": "security",
+    "icon": "lock"
+  },
+  {
+    "id": "a69d98ee-0b4b-4d36-81f8-8d3a1e7a570c",
+    "name": "maps",
+    "icon": "map"
+  },
+  {
+    "id": "df279a90-1192-4f02-94b4-bd7014b9a10f",
+    "name": "phones",
+    "icon": "phone"
+  },
+  {
+    "id": "d44f38a1-b9d7-4bcf-ba46-5c0f6e86b4f3",
+    "name": "travel",
+    "icon": "plane"
+  },
+  {
+    "id": "97f5f285-e43b-4694-bdd1-3e6d1f09e31f",
+    "name": "shopping",
+    "icon": "shopping-cart"
+  },
+  {
+    "id": "a1ffed6b-d08b-4b28-930d-46c972914b46",
+    "name": "friends",
+    "icon": "smile"
+  }
+]
