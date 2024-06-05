@@ -39,3 +39,9 @@ watch(favoriteList, (newList) => {
     </TransitionGroup>
   </ul>
 </template>
+
+<style scoped>
+ul {
+  scrollbar-gutter: stable;
+}
+</style>
