@@ -5,7 +5,7 @@ import "./commands";
 import { mount } from "cypress/vue";
 
 // Import style sheets
-import "@/styles/boot.scss";
+import "@/styles/boot.css";
 
 // Custom mount command that exposes the Vue Test Utils wrapper
 // https://docs.cypress.io/guides/component-testing/custom-mount-vue
