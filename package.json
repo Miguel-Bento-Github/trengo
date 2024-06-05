@@ -20,6 +20,7 @@
     "prod:preview": "vite preview --port 8261"
   },
   "dependencies": {
+    "@formkit/drag-and-drop": "^0.1.0",
     "@fortawesome/fontawesome-svg-core": "1.x",
     "@fortawesome/free-brands-svg-icons": "5.x",
     "@fortawesome/free-regular-svg-icons": "5.x",
@@ -27,6 +28,8 @@
     "@fortawesome/vue-fontawesome": "3.0.8",
     "core-js": "3.29.0",
     "pinia": "2.0.33",
+    "pinia-plugin-persistedstate": "^3.2.1",
+    "uuid": "^9.0.1",
     "vue": "3.4.27",
     "vue-router": "4.1.6"
   },

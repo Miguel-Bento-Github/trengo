@@ -70,9 +70,9 @@ The repository is built with the latest technology and best practices to deliver
 │   │   └── routes.enum.ts
 │   ├── shims-vue.d.ts
 │   ├── styles
-│   │   ├── _default.scss
-│   │   ├── _remedy.scss
-│   │   └── boot.scss
+│   │   ├── _default.css
+│   │   ├── _remedy.css
+│   │   └── boot.css
 │   └── views
 │       ├── 404.vue
 │       └── HomeView.vue

@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@formkit/drag-and-drop':
+        specifier: ^0.1.0
+        version: 0.1.0
       '@fortawesome/fontawesome-svg-core':
         specifier: 1.x
         version: 1.2.36
@@ -29,6 +32,12 @@ importers:
       pinia:
         specifier: 2.0.33
         version: 2.0.33(typescript@4.9.5)(vue@3.4.27(typescript@4.9.5))
+      pinia-plugin-persistedstate:
+        specifier: ^3.2.1
+        version: 3.2.1(pinia@2.0.33(typescript@4.9.5)(vue@3.4.27(typescript@4.9.5)))
+      uuid:
+        specifier: ^9.0.1
+        version: 9.0.1
       vue:
         specifier: 3.4.27
         version: 3.4.27(typescript@4.9.5)
@@ -295,6 +304,9 @@ packages:
   '@eslint/js@8.35.0':
     resolution: {integrity: sha512-JXdzbRiWclLVoD8sNUjR443VVlYqiYmDVT6rGUEIEHU5YJW0gaVZwV2xgM7D4arkvASqD0IlLUVjHiFuxaftRw==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+
+  '@formkit/drag-and-drop@0.1.0':
+    resolution: {integrity: sha512-VOAqJAJ+Qa6i8sUiA26Bg9MkSJVDyE7azPYjP+CTokHrz1t4rK8irVlR2QKSdEopBpa2Mgfnj+NexCjt3AA24g==}
 
   '@fortawesome/fontawesome-common-types@0.2.36':
     resolution: {integrity: sha512-a/7BiSgobHAgBWeN7N0w+lAhInrGxksn13uK7231n2m8EDPE3BMCl9NZLTGrj9ZXfCmC6LM0QLqXidIizVQ6yg==}
@@ -1949,6 +1961,11 @@ packages:
     resolution: {integrity: sha512-C3FsVNH1udSEX48gGX1xfvwTWfsYWj5U+8/uK15BGzIGrKoUpghX8hWZwa/OFnakBiiVNmBvemTJR5mcy7iPcg==}
     engines: {node: '>=4'}
 
+  pinia-plugin-persistedstate@3.2.1:
+    resolution: {integrity: sha512-MK++8LRUsGF7r45PjBFES82ISnPzyO6IZx3CH5vyPseFLZCk1g2kgx6l/nW8pEBKxxd4do0P6bJw+mUSZIEZUQ==}
+    peerDependencies:
+      pinia: ^2.0.0
+
   pinia@2.0.33:
     resolution: {integrity: sha512-HOj1yVV2itw6rNIrR2f7+MirGNxhORjrULL8GWgRwXsGSvEqIQ+SE0MYt6cwtpegzCda3i+rVTZM+AM7CG+kRg==}
     peerDependencies:
@@ -2474,6 +2491,10 @@ packages:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
     hasBin: true
 
+  uuid@9.0.1:
+    resolution: {integrity: sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==}
+    hasBin: true
+
   validate-npm-package-license@3.0.4:
     resolution: {integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==}
 
@@ -2795,6 +2816,8 @@ snapshots:
       - supports-color
 
   '@eslint/js@8.35.0': {}
+
+  '@formkit/drag-and-drop@0.1.0': {}
 
   '@fortawesome/fontawesome-common-types@0.2.36': {}
 
@@ -4636,6 +4659,10 @@ snapshots:
 
   pify@3.0.0: {}
 
+  pinia-plugin-persistedstate@3.2.1(pinia@2.0.33(typescript@4.9.5)(vue@3.4.27(typescript@4.9.5))):
+    dependencies:
+      pinia: 2.0.33(typescript@4.9.5)(vue@3.4.27(typescript@4.9.5))
+
   pinia@2.0.33(typescript@4.9.5)(vue@3.4.27(typescript@4.9.5)):
     dependencies:
       '@vue/devtools-api': 6.6.2
@@ -5182,6 +5209,8 @@ snapshots:
   util-deprecate@1.0.2: {}
 
   uuid@8.3.2: {}
+
+  uuid@9.0.1: {}
 
   validate-npm-package-license@3.0.4:
     dependencies:
