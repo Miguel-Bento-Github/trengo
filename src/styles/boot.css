@@ -1,5 +1,7 @@
-@use "@/styles/remedy";
-@use "@/styles/default";
+@import "@/styles/remedy";
+@import "@/styles/default";
+@import "@/styles/slide";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

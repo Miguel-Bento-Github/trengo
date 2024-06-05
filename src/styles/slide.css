@@ -1,0 +1,14 @@
+.content-move,
+.content-enter-active {
+  transition: all 0.5s ease;
+}
+
+.content-leave-active {
+  transition-duration: 0.25s;
+}
+
+.content-enter-from,
+.content-leave-to {
+  opacity: 0;
+  transform: translateX(-30px);
+}
