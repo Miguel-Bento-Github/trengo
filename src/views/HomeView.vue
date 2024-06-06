@@ -63,6 +63,7 @@ const createEntry = (name: string) => {
             @add="addFavorite(channel.id)"
             v-for="channel in channelStore.channels"
             :key="channel.id"
+            data-cy="list-item"
           >
             <span>
               <FontAwesomeIcon :icon="channel.icon" />

@@ -11,8 +11,14 @@ const channelStore = useChannelStore();
       v-if="channelStore.isStateChanged"
       class="mt-2 flex justify-end gap-x-2"
     >
-      <PopupButton @click="channelStore.reset()"> Cancel </PopupButton>
-      <PopupButton :isDark="true" @click="channelStore.save()">
+      <PopupButton @click="channelStore.reset()" data-cy="cancel-button">
+        Cancel
+      </PopupButton>
+      <PopupButton
+        :isDark="true"
+        @click="channelStore.save()"
+        data-cy="apply-button"
+      >
         Apply
       </PopupButton>
     </div>

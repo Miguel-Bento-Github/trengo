@@ -4,7 +4,7 @@ import { useDragAndDrop } from "@formkit/drag-and-drop/vue";
 import { useChannelStore } from "@/stores/useChannelStore";
 import { storeToRefs } from "pinia";
 import { watch } from "vue";
-import ChannelItem from "@/components/ChannelItem.vue";
+import ChannelItem from "@/components/atoms/ChannelItem.vue";
 
 const channelStore = useChannelStore();
 const { favorites: favoritesRef } = storeToRefs(channelStore);
@@ -29,11 +29,17 @@ watch(favoriteList, (newList) => {
 
 <template>
   <ul ref="favoriteRef" class="max-h-96 overflow-y-auto rounded-md">
-    <TransitionGroup name="content">
-      <li v-for="favorite in favoriteList" :key="favorite" class="min-h-5">
+    <TransitionGroup name="content" tag="div">
+      <li
+        v-for="favorite in favoriteList"
+        :key="favorite"
+        class="min-h-5"
+        data-cy="favorite-list-item"
+      >
         <ChannelItem
           :item="channelStore.getChannelById(favorite)"
           @remove="channelStore.removeFavorite(favorite)"
+          data-cy="channel-item"
         />
       </li>
     </TransitionGroup>
@@ -41,6 +47,7 @@ watch(favoriteList, (newList) => {
 </template>
 
 <style scoped>
+/* Prevent layout shift */
 ul {
   scrollbar-gutter: stable;
 }
