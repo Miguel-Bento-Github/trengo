@@ -8,7 +8,9 @@ interface State {
   savedFavorites: ChannelItem["id"][];
 }
 
-const defaultFavorites = channels.map((channel) => channel.id).slice(0, 5);
+export const defaultFavorites = channels
+  .map((channel) => channel.id)
+  .slice(0, 5);
 
 export const useChannelStore = defineStore({
   id: "channels",

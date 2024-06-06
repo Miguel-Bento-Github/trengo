@@ -21,9 +21,15 @@ const emit = defineEmits<{
       <span
         class="aria-hidden text-gray-800 grid place-items-center w-8 h-8 p-1 mx-1.5 bg-gray-100 rounded"
       >
-        <FontAwesomeIcon :icon="item?.icon" />
+        <FontAwesomeIcon
+          v-if="item?.icon"
+          :icon="item.icon"
+          data-cy="channel-item-icon"
+        />
       </span>
-      {{ item?.name }}
+      <span data-cy="channel-item-text">
+        {{ item?.name }}
+      </span>
     </span>
     <ListButton @click="emit('remove')"> Remove </ListButton>
   </div>

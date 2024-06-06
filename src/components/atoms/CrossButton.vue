@@ -13,7 +13,7 @@ const emit = defineEmits<{
       class="cross text-xl fixed -translate-y-4 translate-x-6 hover:text-red-900"
       aria-label="close popup"
     >
-      <FontAwesomeIcon icon="times-circle" />
+      <FontAwesomeIcon aria-hidden="true" icon="times-circle" />
     </MainButton>
   </span>
 </template>

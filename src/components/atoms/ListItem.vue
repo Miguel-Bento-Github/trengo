@@ -7,7 +7,7 @@ const emit = defineEmits<{
 </script>
 
 <template>
-  <div class="flex justify-between items-center pe-4">
+  <div class="flex justify-between items-center p-1 pe-4 hover:bg-gray-200">
     <slot />
     <ListButton type="button" @click="emit('add')"> Add </ListButton>
   </div>

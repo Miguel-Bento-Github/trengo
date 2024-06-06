@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import InputPopup from "../InputPopup.vue";
+import PopupInput from "@/components/atoms/PopupInput.vue";
 
 const emit = defineEmits<{
   (e: "enter", value: string): void;
@@ -11,7 +11,7 @@ defineProps<{ placeholder: string; description: string; name: string }>();
 <template>
   <form @submit.prevent="">
     <fieldset>
-      <InputPopup
+      <PopupInput
         @keydown.enter="emit('enter', $event.target.value)"
         :name="name"
         :placeholder="placeholder"
