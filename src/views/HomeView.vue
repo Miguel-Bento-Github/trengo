@@ -32,7 +32,12 @@ const createEntry = (name: string) => {
 </script>
 
 <template>
-  <h1 class="text-xl font-semibold mx-auto mb-4 w-10/12 max-w-4xl">Channels</h1>
+  <h1
+    data-cy="home-title"
+    class="text-xl font-semibold mx-auto mb-4 w-10/12 max-w-4xl"
+  >
+    Channels
+  </h1>
   <main class="mx-auto w-10/12 max-w-4xl shadow-lg p-4 rounded-lg">
     <div>
       <FormFieldset
@@ -59,7 +64,10 @@ const createEntry = (name: string) => {
             v-for="channel in channelStore.channels"
             :key="channel.id"
           >
-            {{ channel.name }}
+            <span>
+              <FontAwesomeIcon :icon="channel.icon" />
+              {{ channel.name }}
+            </span>
           </ListItem>
         </div>
       </dialog>

@@ -1,12 +1,12 @@
 import { createPinia } from "pinia";
-import ChannelControl from "../ChannelControl.vue";
+import Home from "@/views/HomeView.vue";
 
-describe("Channel Changes", () => {
-  it("Should change channel", () => {
-    cy.mount(ChannelControl, {
+describe("Homepage", () => {
+  it("Should have title", () => {
+    cy.mount(Home, {
       extensions: { use: [createPinia()] },
     });
 
-    cy.get("html").should("have.value", "en");
+    cy.dataCy("home-title").should("have.value", "Channels");
   });
 });
