@@ -9,7 +9,7 @@ describe("getRandomItem", () => {
   });
 
   it("should throw an error if the array is empty", () => {
-    const emptyArray: any[] = [];
+    const emptyArray: unknown[] = [];
     expect(() => getRandomItemInArray(emptyArray)).toThrow("Array is empty.");
   });
 

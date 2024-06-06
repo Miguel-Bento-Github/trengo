@@ -29,7 +29,7 @@ watch(favoriteList, (newList) => {
 
 <template>
   <ul ref="favoriteRef" class="max-h-96 overflow-y-auto rounded-md">
-    <TransitionGroup name="content" tag="div">
+    <TransitionGroup name="content">
       <li
         v-for="favorite in favoriteList"
         :key="favorite"

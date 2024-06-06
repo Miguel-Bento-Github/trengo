@@ -1,6 +1,6 @@
 export const notFound = {
   path: "/:catchAll(.*)",
-  component: () => import("@/views/404.vue"),
+  component: () => import("@/views/NotFound.vue"),
   meta: {
     title: "404",
     metaTags: [
